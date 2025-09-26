@@ -1,0 +1,10 @@
+Weboldal létrehozása HTML és CSS állományok segítségével
+
+Szabadon választható téma
+A segédletekben fellelhető minél több pontot, például listák, szövegszerkesztési elemek, merítsen ki.
+
+Az <a></a> tag href="" attribútumával akár több HTML fájlotokra is hivatkozhattok,
+előnyös ha több oldalt is készítetek.
+Akár több CSS fájlt is készíthettek, de használhattok 1-et is több oldalhoz.
+
+Bemutatás 10.03 első órájában.

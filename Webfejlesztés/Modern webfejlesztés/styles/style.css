@@ -1,0 +1,17 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background: linear-gradient(45deg, #6c757d, #495057);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s ease;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}

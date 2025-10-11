@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <title>HTML alapok</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/style.css">
+        <style>
+            body { font-family: Arial, sans-serif; margin:20px; }
+            header, footer { background: brown; padding: 10px;}
+            nav a {margin-right: 10px;}
+            section {margin-bottom: 20px;}
+            table, th, td {border: 1px solid black; border-collapse: collapse; padding: 5px;}
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>HTML alapok</h1>
+            <h3>Kisebb cím</h3>
+            <nav>
+                <a href="#szoveg">Szöveg</a>
+                <a href="#kepek">Képek és média</a>
+                <a href="#lista">Listák</a>
+                <a href="#tablazat">Táblázat</a>
+                <a href="#urlap">Űrlap</a>
+            </nav>
+        </header>
+        <main>
+            <section id="szoveg">
+                <h2>Szövegformázás</h2>
+                <p>Ez egy bekezdés</p>
+                <strong>Ez egy félkövér szöveg</strong><br>
+                <em>Dőlt</em><br>
+                <mark>Kiemelt szöveg</mark><br>
+                <hr>
+                <span>Szöveg itt is</span>
+            </section>
+
+            <section id="kepek">
+                <h2>Képek és videóanyagok</h2>
+                <img src="images/macska.jpg" alt="Macska" title="Macska" width="250" height="250">
+                <audio controls>
+                    <source src="" type="audio/mpeg">
+                </audio>
+            </section>
+
+            <section id="lista">
+                <h2>Listák</h2>
+                <h3>Számozatlan lista</h3>
+                <ul>
+                    <li>Alma</li>
+                    <li>Banán</li>
+                    <li>Körte</li>
+                </ul>
+                <h3>Számozott lista</h3>
+                <ol>
+                    <li>Első</li>
+                    <li>Második</li>
+                    <li>Harmadik</li>
+                </ol>
+            </section>
+
+            <section id="tablazat">
+                <h2>Táblázat</h2>
+                <caption>Heti órarend</caption>
+                <table>
+                    <tr>
+                        <th>Nap</th>
+                        <th>Tantárgy</th>
+                    </tr>
+                    <tr>
+                        <td>Péntek</td>
+                        <td>Programozási alapok</td>
+                    </tr>
+                    <tr>
+                        <td>Szombat</td>
+                        <td>Bármi más</td>
+                    </tr>
+                </table>
+            </section>
+
+            <section id="urlap">
+                <h2>Űrlap</h2>
+                <form action="" method="">
+                    <label for="nev">Név:</label>
+                    <input type="text" id="nev" name="nev">
+                    <br>
+                    <label for="uzenet">Üzenet:</label>
+                    <textarea id="uzenet" name="uzenet"></textarea>
+                    <label for="valasztas">Válassz:</label>
+                    <select id="valasztas" name="valasztas">
+                        <option>Alma</option>
+                        <option>Körte</option>
+                        <option>Banán</option>
+                    </select>
+                    <br>
+                    <button type="submit">Küldés</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>JavaScript példa</h2>
+                <button onclick="hello()">Helló üzenet</button>
+            </section>
+        </main>
+        <footer>
+            <p> &copy; Lazanyecz Márk</p>
+        </footer>
+
+        <script>
+            function hello() {
+                alert("Hello user");
+                console.log("JS parancs lefutott");
+            }
+        </script>
+    </body>
+</html>

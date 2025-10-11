@@ -1,0 +1,68 @@
+https://validator.w3.org/	Validátor weboldala
+
+<!DOCTYPE html>		HTML5 technológia meghatározása
+<html></html>		Az állományt nyitó és záró elem.
+<head></head>		A böngésző tetején megjelenő fejléc, fontos információkat ide helyezünk, más állományok csatolását itt hajtjuk végre.
+- <meta>	 	Metaadatok megadására szolgál
+- <title></title> 	A fejléc címét adjuk meg
+- <link>		Külső css fájl csatolása, fontos paraméterei a rel="stylesheet" és a href="" ami az elérési utat várja
+- <style>		Belső css használata, a <body> részben is megadható
+
+<body></body>		A weboldal törzs tartalma
+OLDAL FELÉPÍTÉSE
+- <header></header>	Fejléc, az oldal tetején
+- <main></main>		Az oldal fő része
+- <footer></footer>	Lábléc, az oldal alján
+- <nav></nav>		Navigációs menüsor
+- <div></div>		Tartalom konténer
+- <section></section>	Az oldal logikai felosztására szolgál
+- <article></article>	Blogposzt
+- <aside></aside>	Kiegészítő információ
+- <span></span>		Soron belüli kifejezés
+SZÖVEGFORMÁZÁS
+- <h1></h1>		Címsor, 1-6-ig terjed a számozás ahol 1 a legnagyobb, 6 a legkisebb
+- <p></p>		Szöveges bekezdés
+- <strong></strong>	Félkövér szöveg
+- <em></em>		Dőlt betűs szöveg
+- <mark></mark>		Kiemelt szöveg
+- <sub></sub>		Alsó index
+- <sup></sup>		Felső index
+- <blockquote></blockquote>	Idézetblokk
+- <code></code>		Kódrészlet
+- <br>			Sortörés
+- <hr>			Vízszintes vonal
+LINKEK, MEGJELENÍTÉSEK
+- <a></a>		Hivatkozás beágyazása, fontos paraméterek a href="" ami a célt várja, és a target="" amivel megadhatjuk hol nyíljon meg.
+- <img>			Fénykép elhelyezése, src="" a kép elérését várja
+- <audio></audio>	Hanganyag, src="" szintén
+  - <source>		Forrás megadása
+- <video></video>	Videóanyag, src="" szintén
+  - <source>		Forrás megadása
+LISTÁK ÉS TÁBLÁZATOK
+- <ol></ol>		Számozott, "rendezett" lista
+- <ul></ul>		Számozatlan lista
+  - <li></li>		Listaelem
+- <table></table>	Táblázat
+  - <caption></caption> Táblázat címsora
+  - <th></th>		Fejléc cella
+  - <tr></tr>		Sor
+  - <td></td>		Oszlop
+ŰRLAP
+- <form></form>		Űrlap definiáló tag, fontos paraméterek a későbbiekben az action="" és a method=""
+- <input>		Bemeneti adat a felhasználótól
+- <textarea></textarea> Szövegmező
+- <button></button>	Gomb
+- <select></select>	Választórészleg
+  - <option></option>	Választási lehetőségek
+- <label></label>		Címke
+SCRIPT
+- <script></script>	Javascript megadása akár külső fájlból src="" segítségével, akár helyben írva, <head> részben is megadható
+
+LEFOGLALT KARAKTEREK
+&nbsp;	szóköz
+&lt;	kisebb, mint
+&gt;	nagyobb, mint
+&amp;	és-jel
+&apos;	aposztróf
+&quot;	idézőjel
+&copy;	copyright

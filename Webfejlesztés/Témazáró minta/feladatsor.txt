@@ -1,0 +1,141 @@
+A forrásban található egy befejezetlen reszponzív oldal, amely részletesebben bemutatja az hegymászást. 
+A mintának és a leírásnak megfelelően módosításokat kell elvégeznie a weboldalon és a hozzátartozó CSS stíluslapon!
+Nyissa meg az index.html és style.css állományokat és a feladatleírásnak megfelelően végezze el a módosításokat!
+_______________________________________________________________________________________________________________________________________
+
+1.
+- A weboldal karakterkódolása utf-8 legyen és állítsa be az oldal nyelvezetét magyarra! A böngésző fülön megjelenő cím Hegymászás legyen!
+- 2 pont
+_______________________________________________________________________________________________________________________________________
+
+2.
+- A Bootstrap stíluslap hozzá lett csatolva a weboldalhoz, de sajnos a style.css stíluslap nem. 
+A weboldal fejrészében helyezzen el hivatkozást a css mappában található style.css stíluslapra, 
+a már meglévő Bootstrap stíluslap hivatkozása alá!
+- 1 pont
+_______________________________________________________________________________________________________________________________________
+
+3.
+- A stíluslapon lévő header HTML elemhez tartozó elemkijelölőt módosítsa úgy, hogy a fejléc magassága legyen 350 pixel nagyságú, 
+valamint a fejléc háttérszínét állítsa #FFF5EE színűre!
+- 2 pont
+_______________________________________________________________________________________________________________________________________
+
+4.
+- A h1 címsor elemkijelölőjében állítsa be a következőket a stíluslapon:
+    - Az áttetszősége legyen 0.6!
+    - 1 pont
+
+    - A betű színe fekete!
+    - 1 pont
+
+    - A cím legyen félkövér stílusú!
+    - 1 pont
+_______________________________________________________________________________________________________________________________________
+
+5.
+- Készítsen egy navbar nevű osztálykijelölőt a stíluslapon, 
+amely segítségével állítsa be a betűk színét feketére, és legyen félkövér stílusú.
+- 2 pont
+
+_______________________________________________________________________________________________________________________________________
+
+6.
+- A weboldal menüjét egészítse ki egy új „Versenyek” menüponttal, amely az oldalon a versenyek azonosítóra mutat!
+- 1 pont
+_______________________________________________________________________________________________________________________________________
+
+7.
+- A 2-es szintű címsorokra a következő formázásokat állítsa be a stíluslapon új szelektor létrehozásával:
+- 1 pont
+    - A címsorok alatt helyezzen el 3 pixel vastag folyamatos #778899 színű szegélyt.	
+    - 1 pont
+
+    - A felső margó legyen 15 pixel nagyságú.	
+    - 1 pont
+
+    - Az alcím legyen kis kapitális stílusú.	
+    - 1 pont
+
+    - Az alcím belső margóját állítsa függőleges irányba 5 pixel nagyságúra, míg vízszintes irányba 15 pixelre!	
+    - 1 pont
+_______________________________________________________________________________________________________________________________________
+
+8.
+- Az első bekezdés elé illessze be a hegymaszas.jpg képet. Ha a kép fölé visszük az egeret, vagy a kép valamiért nem jeleníthető meg, 
+akkor mindkét esetben a "Hegymászás" szöveg jelenjen meg! A képet formázza a stíluslap jobbkep azonosító kijelölőjével!	
+- 2 pont
+_______________________________________________________________________________________________________________________________________
+
+9.
+- A stíluslapon állítsa be, hogy a jobbkep azonosító kijelölővel ellátott kép szélessége 300 pixel legyen.	
+- 2 pont
+_______________________________________________________________________________________________________________________________________
+
+10.
+- A Típusok jelenleg 2 oszlopos elrendezésben jelennek meg kisméretű, valamint nagyméretű eszközöktől felfele is. 
+Módosítsa úgy a rácsszerkezetet, hogy nagyméretű eszközöktől felfele 3 oszlopos elrendezésben jelenjenek meg a típusok!	
+- 2 pont
+_______________________________________________________________________________________________________________________________________
+
+11.
+- A típusokban megjelenő összes szöveg legyen középre igazítva.	
+- 1 pont
+_______________________________________________________________________________________________________________________________________
+
+12.
+- A tablazat.txt fájlban található részleges kódot illessze be a Versenyek címsor után. 	
+- 1 pont
+_______________________________________________________________________________________________________________________________________
+
+13.
+- A table HTML elemre alkalmazza a table és table-striped Bootstrap stílusokat!	
+- 1 pont
+_______________________________________________________________________________________________________________________________________
+
+14.
+- Készítse el a táblázathoz a fejléccellákat a mintának megfelelően, majd töltse fel a Típus, Név, Helyszín, Dátum értékekkel.	
+- 1 pont
+_______________________________________________________________________________________________________________________________________
+
+15.
+- A Technika résznél alakítsa ki a mintának megfelelő számozatlan felsorolást. 	
+- 1 pont
+_______________________________________________________________________________________________________________________________________
+
+16.
+- Minden felsorolás elemnél a cím H3 címsor, a maradék szöveget tegye bekezdések közé!
+- 1 pont
+_______________________________________________________________________________________________________________________________________
+
+17.
+- A felsorolt elemeknek ne legyen szimbóluma.	
+- 1 pont
+_______________________________________________________________________________________________________________________________________
+
+18.
+- A forrás utáni szövegből „Magyar Hegymászó Szövetség”készítsen hivatkozást, ami a link.txt állományban lévő oldalra mutasson. 
+A hivatkozás új oldalon nyíljon meg. 	
+- 1 pont
+_______________________________________________________________________________________________________________________________________
+
+19.
+- A stíluslapon a 3-as szintű alcímeket igazítsa középre és a stílusuk legyen félkövér!	
+- 1 pont
+_______________________________________________________________________________________________________________________________________
+
+20.
+- Az egész weboldalon a szöveg színét állítsa #708090 színűre.	
+- 1 pont
+
+_______________________________________________________________________________________________________________________________________
+
+21.
+Ellenőrizze munkáját!
+- A HTML oldalt validálja a https://validator.w3.org/ oldalon! Az eredményről készítsen pillanatképet, 
+amelyet mentsen el egy word dokumentumba indexValidalas néven! 	
+- 1 pont
+
+- A stíluslapot ellenőrizze https://jigsaw.w3.org/css-validator/ oldalon! Az eredményről készítsen pillanatképet,
+amelyet mentsen el egy word dokumentumba styleValidalas néven!
+- 1 pont

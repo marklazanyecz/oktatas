@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="hu">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hegymászás</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Saját stíluslap (a Bootstrap hivatkozása alá) -->
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar" href="#">Hegymászás</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                    aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link navbar" href="#">Főoldal</a></li>
+                        <li class="nav-item"><a class="nav-link navbar" href="#tipusok">Típusok</a></li>
+                        <li class="nav-item"><a class="nav-link navbar" href="#technika">Technika</a></li>
+                        <li class="nav-item"><a class="nav-link navbar" href="#versenyek">Versenyek</a></li>
+                        <!-- Új menüpont: Versenyek (a fenti link a #versenyek azonosítóra mutat) -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container text-center d-flex flex-column justify-content-center align-items-center"
+            style="height:100%;">
+            <h1>Hegymászás</h1>
+            <p class="lead">A hegyek hívása — semmi sem hasonlítható hozzá.</p>
+        </div>
+    </header>
+
+
+    <main class="container my-4">
+        <!-- Kép az első bekezdés elé (id="jobbkep") -->
+        <img id="jobbkep" src="resources/images/hegymaszas.jpg" alt="Hegymászás" title="Hegymászás">
+        <p>Első bekezdés: bemutatkozás a hegymászás világába. Itt részletezheti a sport rövid történetét és vonzerejét.
+        </p>
+
+
+        <section id="tipusok" class="my-5">
+            <h2 class="section-title">Típusok</h2>
+            <div class="row">
+                <article class="col-6 col-lg-4 mb-3">
+                    <h3>Sziklamászás</h3>
+                    <p>Rövid leírás a sziklamászásról.</p>
+                </article>
+                <article class="col-6 col-lg-4 mb-3">
+                    <h3>Hegymászás</h3>
+                    <p>Rövid leírás a hegyi túrázásról.</p>
+                </article>
+                <article class="col-6 col-lg-4 mb-3">
+                    <h3>Jégmászás</h3>
+                    <p>Rövid leírás a jégmászásról.</p>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="technika" class="my-5">
+            <h2 class="section-title">Technika</h2>
+            <div class="row">
+                <article class="col-6">
+                    <h3>Biztosítási technikák</h3>
+                    <ul class="technikak">
+                        <li>Kötélvezetés</li>
+                        <li>Biztosítóeszközök használata</li>
+                        <li>Kommunikáció a partnerrel</li>
+                        <li>Csomók: nyolcas, pruszik, dupla félcsomó</li>
+                    </ul>
+                </article>
+                <article class="col-6">
+                    <h3>Felszerelés</h3>
+                    <ul class="technikak">
+                        <li>Heveder és beülő</li>
+                        <li>Mászósisak</li>
+                        <li>Karabinerek, expresszek</li>
+                        <li>Kötelek karbantartása</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+
+        <section id="versenyek" class="my-5">
+            <h2 class="section-title">Versenyek</h2>
+
+
+            <!-- Itt illesztettük be a tablazat.txt-ből származó (részleges) kódot -->
+            <!-- Ha van pontos tablazat.txt tartalom, cserélje le a következő táblázatot vele. -->
+
+
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Típus</th>
+                        <th>Név</th>
+                        <th>Helyszín</th>
+                        <th>Dátum</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sziklamászás</td>
+                        <td>Magyar Bajnokság</td>
+                        <td>Budapest</td>
+                        <td>2025-06-20</td>
+                    </tr>
+                    <tr>
+                        <td>Jégmászás</td>
+                        <td>Téli Kupa</td>
+                        <td>Mátrafüred</td>
+                        <td>2025-01-15</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <footer class="text-center py-3">
+        <p>Részletes információkért látogassa meg a <a href="https://mhssz.hu/" target="_blank" rel="noopener">MHSSZ</a>
+            oldalát.</p>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+</html>

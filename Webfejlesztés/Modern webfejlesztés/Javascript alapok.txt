@@ -1,0 +1,285 @@
+<button onclick="alert('Helló!')"> Kattints rám! </button>      HTML-en belül elhelyezett, "inline" JavaScript, maximum nagyon rövid kódok, szükséges esetben.
+
+<script>                                                        HTML-en belül elhelyezett, belső script, a </body> zárótag előtt,   
+  console.log("Üdv a JavaScript világában!");                   hogyha nincs szükség külső, nagyobb kódra.
+</script>
+
+<script src="scripts/base_script.js"></script>                  Szintén belső script, viszont külső JavaScript fájlra hivatkozik, legjobb megoldás.
+________________________________________________________________________________________________________________________________________________________________________
+
+Különböző böngészők különböző JavaScript Engine-eket használnak a kódok fordítására
+A motorokról és azok kompatibilásairól itt lehet informálódni: https://compat-table.github.io/compat-table/es6/
+
+
+Erős a visszafele kompatibilitás, ez a működésben is érződik. Az új verziókban viszont már be lehet kapcsolni egy bizonyos "modern" módot.
+Szigorúan az első sorba írva azt, hogy: "use strict", bekapcsolhatjuk, ekkor bizonyos szabálytalanságok felett nem siklik el a rendszer, hanem hibát dob.
+
+
+Szintaxis: Hasonló a css-éhez, az utasítások végén nem kötelező, viszont javasolt ";" jelet tenni a fordítási hibák elkerüléséért
+Egysoros komment: //
+Többsoros komment:
+/*
+- kód -
+*/
+
+________________________________________________________________________________________________________________________________________________________________________
+========================================================================================================================================================================
+
+
+FÜGGVÉNYEK:
+A beépített függvényeken kívül lehetőségünk van saját függvények létrehozására is, és előszeretettel meg is tesszük.
+Szintaxis:
+function myFunction() {
+    // kód
+}
+A zárójelen belül megadhatunk paramétereket, amelyeket a függvényben tudunk használni. Ezeknek a száma "végtelen" lehet.
+A függvény visszatérhet általunk megadott értékekkel, amennyiben szeretnénk ezt.
+
+Nyílfüggvény:
+Lehetőségünk van egysoros függvények létrehozására is, amennyiben a kívánt eredményt minimális kód megadásával elérhetjük.
+Példa:
+const sum = (a, b, c) => (a+b)**c;
+console.log(sum(5, 3, 2));
+
+________________________________________________________________________________________________________________________________________________________________________
+========================================================================================================================================================================
+
+
+ADATTÍPUSOK:
+- Number
+- BigInt
+- String
+- Boolean
+- null
+- undefined
+- Symbol
+- object
+
+typeof() operátorral tudjuk ellenőrizni valami típusát. typeof a ÉS typeof(a). Mind a két leírás elfogadott.
+Típus konkrét megadása: Number(a), String(a) stb. függvények.
+== ellenőrzi, hogy két érték megegyezik-e.
+=== ellenőrzi, hogy a két érték és a két típus is egyezik-e.
+
+________________________________________________________________________________________________________________________________________________________________________
+========================================================================================================================================================================
+
+
+VÁLTOZÓK:
+let, var vagy const kulcsszó megadása után megadjuk a nevét, majd értéket is adhatunk neki. Manapság a let kulcsszót használjuk.
+
+let alma;               Ekkor még undefined a típusa. Kerülendő.
+let banan = "banan";    Ekkor a típusa string lesz, az értéke pedig a megadott szöveg.
+alma = "ALMA";          Szintén megváltozik a típusa, és értéket is kap.
+const pi = 3.14;        const kulcsszóval csak olvashatóvá tehetjük a változónkat.
+
+Vannak foglalt nevek amelyeket nem adhatunk meg változónévnek, ilyenek például már a let és a var szavak is.
+Ha több szóból áll a változó neve, akkor a "camelCase" a gyakorlatban ajánlott módszer.
+
+Ha egy változót függvényen kívül hozunk létre, akkor globális lesz, ha függvényen belül, akkor csak lokális.
+
+________________________________________________________________________________________________________________________________________________________________________
+========================================================================================================================================================================
+
+
+TÖMBÖK:
+Létrehozásukra több lehetőségunk van:
+let tomb = []                   A zárójelen belülre egyből megadhatunk elemeket.
+let tomb2 = new Array()         A zárójelen belülre egész számmal megadhatjuk a nagyságát.
+
+________________________________________________________________________________________________________________________________________________________________________
+========================================================================================================================================================================
+
+
+OPERÁTOROK:
+Unary operátor, ha csak egy elemre alkalmazzuk, például:
+let x = 5;
+x = -x;         x értéke ezentúl -5.
+let y = "7";    Ez még most string típusú.
+y = +y;         Number típussá alakul.
+________________________________________________________________________________________________________________________________________________________________________
+
+Stringek összefűzése + jellel történik. Balról jobbra értékelődik ki, tehát más típusokat át lehet konvertálni, például:
+let szam = "7" + 7;    -> 77 string típusú érték lesz az eredmény.
+________________________________________________________________________________________________________________________________________________________________________
+
+Matematikai műveletek:
+Osztás: /
+Maradékos osztás: %
+Szorzás: *
+Hatványozás: **
+Értékléptetés: ++ és -- jelekkel, például:
+let x = 10;
+++x;            -> Az értéke 11 lesz.
+x--;            -> Az érték újra 10 lesz
+Az változó előtt és után is megadhatjuk, mindkettő elfogadott.
+________________________________________________________________________________________________________________________________________________________________________
+
+Helyi értékmódosítás: +=, -=, *=, /=, %=, **=
+Példa:
+let x = 5;
+x += 10;    -> 15 lesz x értéke.
+________________________________________________________________________________________________________________________________________________________________________
+
+Összehasonlítás:
+<, >, <=, >=, !=, ==, ===
+Összehasonlítások eredménye logikai érték, igaz vagy hamis.
+== Esetében van típus konverzió. Például: 7 == "7"  -> true.
+________________________________________________________________________________________________________________________________________________________________________
+
+Logikai operátorok:
+!   Tagadás
+||  Vagy, az első igaz esetében véget ér a kiértékelés.  Altgr + w
+&&  És, az első hamis esetében véget ér a kiértékelés.   Altgr + c
+________________________________________________________________________________________________________________________________________________________________________
+
+Tenary operator:
+Értékadáskor helyben el tudjuk dönteni egy feltétel alapján, hogy melyik értéket vegye fel a változó.
+Példa:
+let age = 20;
+let status = age >= 18 ? "adult" : "minor";
+Mivel az age változó nagyobb vagy egyenlő mint 18, ezért az adult értéket fogja megkapni.
+
+________________________________________________________________________________________________________________________________________________________________________
+========================================================================================================================================================================
+
+
+VEZÉRLÉSI SZERKEZETEK:
+if-else if-else:
+Először mindig if ággal kezdünk, ott eldől, hogy az alapfeltételünk igaz-e.
+Ha szeretnénk megadni egyéb feltételeket, akkor használjuk az else if ágakat.
+Ha szeretnénk megadni egyéb esetet ami csak akkor fut le, ha egyik feltételünk sem lett igaz, akkor else ágat használunk.
+Példa:
+let age = 17;
+if (age > 18) {
+    console.log("Vén róka vagy!");
+} else if (age == 18) {
+    console.log("Mostmár felnőtt vagy!");
+} else {
+    console.log("Még fiatal vagy!");
+}
+________________________________________________________________________________________________________________________________________________________________________
+
+Switch-case:
+Ha egy változó csak bizonyos értékeket vehet fel és ezt szeretnénk vizsgálni, akkor jobb megoldás lehet a Switch-case.
+Fontos, hogy minden opciót le kell zárni, mert amint igaz értéket vesz fel a kiértékelés lefutnak a maradék ágak.
+Megadhatunk alapesetet is a default kulcsszóval, ami csak akkor fut le, ha nem volt igaz águnk.
+Példa:
+let x = 0;
+let fruit = "alma";
+switch (fruit) {
+    case "korte":
+        x = 10;
+        break;
+    case ("banan") :
+        x = 20;
+        break;
+    case ("alma") :
+        x = 50;
+        break;
+    default :
+        console.log("Nincs finom gyümölcsöm");
+}
+________________________________________________________________________________________________________________________________________________________________________
+
+Kiugrási kulcsszavak:
+break       Azonnal leállítja a feltételrendszer kiértékelését, vagy a ciklust.
+continue    A következő kiértékelésre lép.
+________________________________________________________________________________________________________________________________________________________________________
+
+Ismétléses vezérlés:
+Kezdőfeltételes: while, minden ciklus elején kiértékelődik a feltétel.
+Példa:
+let x = 0;
+while (x < 10) {            Mindaddig ameddig x kisebb mint 10 lefut a ciklus.
+    console.log(x);
+    x--;
+}
+
+Végfeltételes: do while, a kódsor egyszer biztosan lefut, majd minden futás után kiértékelődik a feltétel.
+Példa:
+let x = 0;
+do {
+    console.log(x);     Az x értéke kiírásra kerül, de csak egyszer, mivel utánna a feltétel kiértékelése hamis lesz.
+    x--;
+} while (x > 10);
+
+Iterálás: for, egy változót léptetünk megadott értékenkét, és minden futásnál kiértékelődik egy rá vonatkozó feltétel.
+Példa:
+for (let i = 0; i < 10; i++) {
+    console.log(i);
+}
+A for zárójelén belül elhagyhatunk definiálásokat, amennyiben ezek a kód más részén megvannak.
+Példa:
+let i = 0;
+for (; i < 20;) {
+    console.log(i);
+    i += 3;
+}
+________________________________________________________________________________________________________________________________________________________________________
+
+Egyéb for lehetőségek:
+for of: iterálható objektumokat járhatunk be.
+Példa:
+let tomb = [10, 20, 30];
+for (const i : tomb) {
+    console.log(i);
+}
+
+for in: az objektum egyes elemein tudunk végigmenni.
+Példa:
+const human = {
+    name: "Töhötöm",
+    age: 20,
+    gender: "male", 
+};
+for (const attr in human) {
+    console.log(human[attr]);
+}
+________________________________________________________________________________________________________________________________________________________________________
+
+Label kiugrás:
+Több egymásba ágyazott ciklus esetén lehetőségünk van egy break utasítással minden ciklusfutást leállítani.
+Példa:
+outer:
+for (let i = 0; i < 5; i++) {
+    for (let j = 0; j < 5; j++) {
+        if (i == 3) {
+            break outer;
+        }
+        console.log(j);
+    }
+}
+
+________________________________________________________________________________________________________________________________________________________________________
+========================================================================================================================================================================
+
+HTML ESEMÉNYEK KEZELÉSE:
+Szöveg megjelenítés:
+Megadhatjuk rögtön a html kódjában is: <button onclick="alert('Hello!')"> Kattints rám </button>
+
+Viszont ha több JavaScript kódunk van, érdemes a külső fájlban elhelyezni ezeket.
+Példa:
+    A html kódban:
+    <button id="gomb"> Kattints rám </button>
+    <script src="scripts/base_script.js"></script>
+
+    A külső js fájlban:
+    document.getElementById("gomb").addEventListener("click", () => {
+        alert("Gomb megnyomva!");
+    });
+
+________________________________________________________________________________________________________________________________________________________________________
+
+Document Object Model alapok:
+Lehetőségünk van a html elemek módosítására is.
+
+Elemek kiválasztása:
+let id = document.getElementById("azonosito");
+let htmlClass = document.querySelector(".osztaly");
+let tag = document.querySelectorAll("p");
+
+Ezeknek az objektumoknak pedig bizonyos tulajdonságait meg tudjuk változtatni.
+Példa:
+let cim = document.getElementById("cim");
+cim.textContent = "Új cím";
+cim.style.color = "red";

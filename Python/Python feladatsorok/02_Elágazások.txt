@@ -1,0 +1,77 @@
+1. Esküvő (4 pont)
+
+Írjunk függvényt, ami bekéri, hogy hány vendéget kell taxival szállítani, majd kiírja, hogy hány hat fős taxira lesz szükség!
+
+Írjunk függvényt, ami bekéri, hogy hány vendéget kell taxival szállítani, majd kiírja, hogy összesen hány üres hely marad a hat fős taxikban.
+
+def taxik_szama():
+    pass
+
+def ures_helyek():
+    pass
+
+
+__________________________________________________________________________________________________________________________________________
+
+2. Esküvői tánc (4 pont)
+
+Tündér Lala esküvőjén a vendégek táncolni is fognak, méghozzá keringőt. Mivel a keringő páros tánc, ezért ha egy vendégnek nem jut pár, 
+akkor hívatni kell egy hivatásos táncost, hogy az a partnere legyen. Ha férfi vendégből van kevesebb, akkor férfi táncost, ha női vendégből, akkor hölgyet.
+
+Írjunk két függvényt! Mindkettőnek két paramétere van, férfi vendégek és a női vendégek száma. Az egyik visszaadja, 
+hogy férfi, vagy női táncosokat kell hívni (férfi: "f", női: "n", senkit sem kell hívni: "s"). A másik visszaadja a meghívott hivatásos táncosok számát.
+
+def milyen(ferfiak, nok):
+    pass
+
+def mennyi(ferfiak, nok):
+    pass
+
+
+__________________________________________________________________________________________________________________________________________
+
+3. Gombóc Atrúr (2 pont)
+
+Írjunk függvényt gombocartur() néven, amelynek 6 paramétere van. Ezek a paraméterek logikai értékek, és azt jelzik, 
+az adott csokoládé kerek-e, szögletes-e, lyukas-e, étcsokoládé-e, tejcsokoládé-e, mogyorós-e. 
+Ha ezek bármelyike igaz, akkor Gombóc Artúr szereti ezt a fajta csokoládét, 
+és a függvény visszatérési értéke igaz. Minden más esetben hamis.
+
+
+__________________________________________________________________________________________________________________________________________
+
+4. Szerencse (6 pont)
+
+Story
+Egyszer, réges régen egy család fiát behívták katonának. Az édesanyja igencsak aggódott érte, az édesapa a következő módon vigasztalta: "Kedvesem, ne aggódj!
+Két lehetőség van. Lesz háború, vagy nem lesz. Ha nem lesz, nincs semmi baj.
+Ha lesz háború, akkor két lehetőség van. A fiunk tartalékos lesz, vagy nem lesz. Ha tartalékos lesz, nincs semmi baj.
+Ha nem lesz tartalékos, akkor két lehetőség van. Vagy kiküldik a frontra, vagy nem küldik. Ha nem küldik ki, nincs semmi baj.
+Ha kiküldik, akkor két lehetőség van. Vagy megsebesül, vagy nem. Ha nem sebesül meg, nincs semmi baj.
+Ha megsebesül, akkor két lehetőség van. Vagy könnyen sebesül meg, vagy súlyosan. Ha könnyen sebesül meg, nincs semmi baj.
+Ha súlyosan sebesül meg, akkor két lehetőség van. Vagy meggyógyul, vagy meghal. Ha meggyógyul, nincs semmi baj.
+Ha meghal, akkor két lehetőség van. Vagy rendesen eltemetik, vagy nem. Ha rendesen eltemetik, nincs semmi baj.
+Ha nem temetik el rendesen... De hát ekkora szerencsétlenségünk csak nem lesz!
+
+Írjunk függvényt, ami sorban felteszi ezeket a kérdéseket (pl: 'Lesz háború?', 'Könnyen sebesül meg?', 'Meggyógyul?'),
+és minden kérdésre egy 'igen' vagy egy 'nem' választ vár. A függvénynek nincs paramétere, és egy logikai értéket ad vissza, hogy szerencséjük volt, vagy nem.
+
+
+__________________________________________________________________________________________________________________________________________
+
+5. Síknegyedek (2 pont)
+
+Írjunk függvényt, ami két egész számot kap paraméterként. Ezek egy pont koordinátái a derékszögű koordinátarendszerben. A függvény döntse el, 
+hogy a pont melyik síknegyedben van, és adja vissza a síknegyed sorszámát. A síknegyedek sorszámozása óramutató járásával megegyező irányban történik, 
+úgy, hogy az 1-es síknegyedet mindkét tengely pozitív fele határolja. Ha a pont az egyik tengelyen van, akkor a adjon vissza a függvény 0-t.
+A függvény neve legyen valasztas(). A függvény nem végez IO műveleteket, azaz nincs benne print() vagy input() hívás.
+
+	Példa:
+	Argumentum: 1, 2
+	Output: 1
+
+	Argumentum: -3, 5
+	Output: 4
+
+	Argumentum: 0, 10
+	Output: 0
